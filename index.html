@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+	}
+	.form_section{
+		background-color: #ddd;
+		display: flex;
+		height: 100vh;
+	
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		
+	}
+	.form_section form{
+		border: 1px solid #fff;
+		width: 30%;
+
+	}
+	.form_section label{
+		display: block;
+		padding: 10px 20px
+
+	}
+	 .form_section input{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		padding: 10px 40px;
+		outline: none;
+		border: 1px solid #eee;
+		margin: auto;
+		
+	}
+	.form_section select{
+		padding: 5px 3px;
+		margin: 7px 20px;
+	}
+	.form_section button{
+			margin: 10px 20px;
+			padding: 10px 40px;
+	}
+	.output_section p{
+		padding: 0px 30px;
+	}
+	.form_section .button_section{
+		display: flex;
+		justify-content: space-between;
+	}
+	@media only screen and (max-width:900px) {
+		body{
+			
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+		.form_section{
+			background-color: #ddd;
+			display: flex;
+			height: 100vh;
+		
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			
+		}
+		.form_section form{
+			border: 1px solid #fff;
+			width: 30%;
+	
+		}
+		.form_section label{
+			display: block;
+			padding: 10px 10px
+	
+		}
+		 .form_section input{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+			padding: 10px 0px;
+			outline: none;
+			border: 1px solid #eee;
+			margin: auto;
+			
+		}
+		.form_section select{
+			padding: 5px 3px;
+			margin: 7px 10px;
+		}
+		.form_section button{
+				margin: 10px 10px;
+				padding: 10px 40px;
+		}
+		.output_section p{
+			padding: 0px 10px;
+		}
+		.form_section .button_section{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+</style>
+<body>
+	<div class="form_section">
+		<form action="" method="post" id="form">
+			<label for="">First Number</label>
+			<input type="number" name = "num1" id="num1">
+			<select name="operation" id="operation">
+				<option value="">Select operation</option>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<label for="">Second Number</label>
+			<input type="number" name = "num2" id="num2">
+			<div class="button_section">
+				<button type="submit" id="button">Submit</button>
+				<button type="submit" id="button_clear">clear</button>
+			</div>
+			<div class="output_section">
+				<p >Output is <span id="output"></span></p>
+			</div>
+		</form>
+		
+	</div>
+	
+	<script src="myscript.js"></script>
+</body>
+</html>
